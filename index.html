@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background: url(Wallpaper.jpg);
+        background-size: cover;
+        text-align: center;
+        color: cornflowerblue;
+    }
+
+    button{
+        background: black;
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;
+        box-shadow: 2px 2px 5px blue;
+    }
+
+    h2{
+        color: purple;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    hr{
+        color: teal;
+        border: 6px 6px teal;
+    }
+</style>
+</head>
+<body>
+    <h1>Find The Code!</h1>
+    <button onclick = "scrambler()">Scrambler</button>
+<h2 id="code">
+    Pigs are lovely animals and should be loved by all people.
+    Not as food but as animals!
+    They are cute, cuddly and adorable. 
+    You should think about this animal and see if you like it!
+
+    Pigs are lovely animals and should be loved by all people.
+    Not as food but as animals!
+    They are cute, cuddly and adorable. 
+    You should think about this animal and see if you like it!
+
+    Pigs are lovely animals and should be loved by all people.
+    Not as food but as animals!
+    They are cute, cuddly and adorable. 
+    You should think about this animal and see if you like it!
+
+    Pigs are lovely animals and should be loved by all people.
+    Not as food but as animals!
+    They are cute, cuddly and adorable. 
+    You should think about this animal and see if you like it!
+</h2>
+
+<script>
+    var code =  document.querySelector("#code")
+    code.innerHTML = code.innerHTML.split("").reverse().join("")
+
+    function scrambler(){
+        code.innerHTML = code.innerHTML.split("").reverse().join("")
+    }
+
+
+
+</script>
+</body>
+</html>
